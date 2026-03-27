@@ -1,2 +1,2 @@
-# marriage-gift-list-api
-An API for managing a gift list for an marriage
+# wedding-gift-list-api
+An API for managing a gift list for an wedding
