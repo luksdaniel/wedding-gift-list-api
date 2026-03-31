@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: wedding-gift-list
+
+  # DocumentDB configuration (MongoDB-compatible)
+  data:
+    mongodb:
+      # For DocumentDB with TLS
+      uri: ${DOCUMENTDB_URI:mongodb://localhost:27017/db-missing}
+      database: ${DOCUMENTDB_DATABASE:db-missing}
+      # SSL configuration for DocumentDB
+      ssl-enabled: true
+      ssl-invalid-host-name-allowed: true
+
+# AWS S3 Configuration
+aws:
+  s3:
+    bucket-name: ${AWS_S3_BUCKET:bucket-name}
+    region: ${AWS_REGION:us-east-1}
+  access-key: ${AWS_ACCESS_KEY_ID:access-key-missing}
+  secret-key: ${AWS_SECRET_ACCESS_KEY:secret-key-missing}
+
+# Logging
+logging:
+  level:
+    com.amazonaws: DEBUG
+    software.amazon.awssdk: DEBUG
+    org.springframework.data.mongodb: DEBUG
+
+# Server configuration
+server:
+  port: ${PORT:8080}
+  error:
+    include-message: always
+    include-binding-errors: always
