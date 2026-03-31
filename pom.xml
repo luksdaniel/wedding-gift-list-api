@@ -11,8 +11,8 @@
 	<groupId>com.lucasbatista</groupId>
 	<artifactId>projects</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>marriage-gift-list-api</name>
-	<description>An API for managing a gift list for marriages</description>
+	<name>wedding-gift-list-api</name>
+	<description>An API for managing a gift list for a wedding</description>
 	<url/>
 	<licenses>
 		<license/>
