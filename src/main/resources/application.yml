@@ -2,6 +2,9 @@ spring:
   application:
     name: wedding-gift-list
 
+  config:
+    import: optional:file:.env
+
   # DocumentDB configuration (MongoDB-compatible)
   data:
     mongodb:
